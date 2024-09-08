@@ -39,14 +39,14 @@ public class TestHelloWorld {
   }
 
   @Test
-  public void getMessageInList() { // this test is broken - fix it!
+  public void getMessageInList() { // fixed
     var list = Arrays.asList(fixture);
-    assertEquals("hello world", list.get(1).getMessage());
+    assertEquals("hello world", list.get(0).getMessage()); //index changed from 1 to 0 such that there is only one element in list
   }
 
   @Test
-  public void getYearInList() { // this test is broken - fix it!
+  public void getYearInList() { // fixed
     var list = Arrays.asList(fixture);
-    assertEquals(2024, list.get(1).getYear());
+    assertEquals(2024, list.get(0).getYear()); //index changed from 1 to 0 such that there is only one element in list
   }
 }
